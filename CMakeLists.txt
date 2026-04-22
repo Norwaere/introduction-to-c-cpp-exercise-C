@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # sets the project name to "test"
-project(test)
+project(exb5)
 # build an executable named test from the specified source files
-add_executable(test main.cpp mtlib/src/mt19937.cpp
+add_executable(exb5 exb5-a.cpp)
