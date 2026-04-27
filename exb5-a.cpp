@@ -28,6 +28,8 @@ std::set<int>::iterator func (std::set<int>::iterator lbound, std::set<int>::ite
 int main() { 
     // lower and upper bound of rng and numbers to be generated
     int min = 0, max = 9, len = 8;
+    std::cout << "set input lenght:" << std::endl;
+    std::cin >> len;
 
     std::random_device seed;
     std::mt19937 mt(seed());
