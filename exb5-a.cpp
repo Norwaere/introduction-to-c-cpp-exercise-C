@@ -7,7 +7,7 @@
  * 
  * @param lbound lower bound set/start point of set
  * @param ubound upper bound set/endpoint of set
- * @return std::set<int>::iterator   next of set number after gap
+ * @return std::set<int>::iterator,   next of set number after gap
  */
 std::set<int>::iterator func (std::set<int>::iterator lbound, std::set<int>::iterator ubound) {
     std::set<int>::iterator next_val = std::next(lbound);
@@ -21,7 +21,7 @@ std::set<int>::iterator func (std::set<int>::iterator lbound, std::set<int>::ite
     return ubound;
 }
 /**
- * @brief main function
+ * @brief main function, prompts user for input length
  * 
  * @return int 
  */
