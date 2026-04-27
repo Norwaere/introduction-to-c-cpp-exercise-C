@@ -2,6 +2,13 @@
 #include <random>
 #include <set>
 
+/**
+ * @brief checks for gaps in set
+ * 
+ * @param lbound lower bound set/start point of set
+ * @param ubound upper bound set/endpoint of set
+ * @return std::set<int>::iterator   next of set number after gap
+ */
 std::set<int>::iterator func (std::set<int>::iterator lbound, std::set<int>::iterator ubound) {
     std::set<int>::iterator next_val = std::next(lbound);
     while (next_val != ubound) {
@@ -13,7 +20,11 @@ std::set<int>::iterator func (std::set<int>::iterator lbound, std::set<int>::ite
     }
     return ubound;
 }
-
+/**
+ * @brief main function
+ * 
+ * @return int 
+ */
 int main() { 
     // lower and upper bound of rng and numbers to be generated
     int min = 0, max = 9, len = 8;
